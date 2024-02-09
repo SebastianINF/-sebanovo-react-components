@@ -1,4 +1,4 @@
-import './button.css'
+import './index.css'
 
 interface ButtonProps {
   /**
@@ -8,7 +8,7 @@ interface ButtonProps {
   /**
    * Button contents
    */
-  text: string
+  text: string 
   /**
    * Optional click handler
    */

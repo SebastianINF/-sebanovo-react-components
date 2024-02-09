@@ -33,6 +33,6 @@ export default {
 #instalando storybook
 npx storybook@latest init --package-manager=pnpm
 
-#integracion para el darkMode
+#integración para el darkMode
 npm i storybook-dark-mode -D
 ```
