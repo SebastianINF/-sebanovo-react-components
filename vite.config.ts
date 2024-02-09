@@ -8,6 +8,9 @@ const pluginConfigDts : PluginOptions= {rollupTypes: true}
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), dts(pluginConfigDts)],
+  resolve : {
+    alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
+  },
   root: './',
   build: {
     outDir : 'lib',
