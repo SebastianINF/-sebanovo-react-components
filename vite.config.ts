@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import { resolve } from 'node:path'
 import dts, { type PluginOptions } from 'vite-plugin-dts'
 import { libInjectCss, type LibOptions } from 'vite-plugin-lib-inject-css'
+import { resolve } from 'node:path'
 
 const pluginConfigDts: PluginOptions = { rollupTypes: true }
 // https://github.com/emosheeep/fe-tools/tree/HEAD/packages/vite-plugin-lib-inject-css

@@ -23,7 +23,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-app",
-    "deploy": "npm run build-storybook && gh-pages -d storybook-app"
+    "deploy": "gh-pages -d storybook-app"
   },
   "peerDependencies": {
     "react": "^18.2.0",
