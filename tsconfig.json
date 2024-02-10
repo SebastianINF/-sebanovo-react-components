@@ -24,7 +24,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "exclude": ["src/stories"],
+  "include": ["src/components/*.tsx", "src/components/*.css"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -8,12 +8,18 @@ const pluginConfigDts: PluginOptions = { rollupTypes: true }
 // https://github.com/emosheeep/fe-tools/tree/HEAD/packages/vite-plugin-lib-inject-css
 const pluginConfigLibInjectCss: LibOptions = {
   // es format no formats necesita un pr xd
-  format : ['es', 'umd'],
+  formats : ['es'],
   entry: {
     index: 'src/components/index.tsx' // Don't forget the main entry!
   },
+  
   build: {
-    emptyOutDir: false
+    emptyOutDir: false,
+    lib:{
+      formats: ['es'],
+      name: 'Mi primera libreria de react',
+      entry: 'src/components/index.tsx'
+    } 
   }
 }
 // https://vitejs.dev/config/
@@ -25,15 +31,14 @@ export default defineConfig({
   root: './',
   build: {
     outDir: 'lib',
-
     lib: {
       entry: resolve(__dirname, 'src/components/index.tsx'),
-      name: 'My first components library',
+      name: 'mi primera aplicación de react',
       // the proper extensions will be added
-      formats: ['es', 'umd'],
+      formats: ['es'],
       fileName: 'index'
     },
     copyPublicDir: false,
     minify: true
-  }
+  },
 })
