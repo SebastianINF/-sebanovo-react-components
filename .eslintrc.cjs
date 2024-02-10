@@ -7,7 +7,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:storybook/recommended"
   ],
-  ignorePatterns: ['lib', '.eslintrc.cjs', 'storybook-app'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'storybook-app'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {

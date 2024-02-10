@@ -1,5 +1,4 @@
 import './index.css'
-
 interface ButtonProps {
   /**
    * How large should the button be?
@@ -18,7 +17,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-const Button= ({ text, onClick, ...props }: ButtonProps) => {
+const Buttons= ({ text, onClick, ...props }: ButtonProps) => {
   return (
     <button className='Button' {...props} onClick={onClick}>
       {text}
@@ -26,4 +25,4 @@ const Button= ({ text, onClick, ...props }: ButtonProps) => {
   )
 }
 
-export default Button
+export default Buttons

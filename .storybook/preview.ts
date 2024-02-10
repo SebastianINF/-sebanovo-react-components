@@ -15,6 +15,8 @@ const preview: Preview = {
 
 export const parameters = {
   darkMode: {
+    classTarget : 'html',
+    stylePreview : true,
     current: 'dark',
     // Override the default dark theme
     dark: { ...themes.dark, appBg: 'black' },
